@@ -71,7 +71,7 @@ Before running the app, make sure you have the following installed:
   cd arxiv-qa-llm-app
   ```
 
-3. Add Gemini API key to .env file OR create your api key from [GEMINI_API_KEY 🔑]("https://makersuite.google.com/app/apikey")
+3. Add Gemini API key to .env file OR create your api key from [GEMINI_API_KEY 🔑](https://makersuite.google.com/app/apikey)
   ```
   GEMINI_API_KEY=<YOUR_API_KEY>
   ``` 
