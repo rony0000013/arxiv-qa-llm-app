@@ -1,0 +1,34 @@
+version: "3.8"
+services:
+  pw_backend:
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+    environment:
+      GEMINI_API_KEY: "${GEMINI_API_KEY}"
+      HUGGINGFACE_API_KEY: "${HUGGINGFACE_API_KEY}"
+      PATHWAY_PERSISTENT_STORAGE: "%{PATHWAY_PERSISTENT_STORAGE}"
+      PATHWAY_REST_CONNECTOR_HOST: "%{PATHWAY_REST_CONNECTOR_HOST}"
+      PATHWAY_REST_CONNECTOR_PORT: "%{PATHWAY_REST_CONNECTOR_PORT}"
+    volumes:
+      - data-volume:/app/data
+  streamlit_ui:
+    depends_on:
+      - pw_backend
+    build:
+      context: ui
+    ports:
+      - "8501:8501"
+    environment:
+      PATHWAY_HOST: pw_backend
+      PATHWAY_PORT: "8000"
+    volumes:
+      - data-volume:/app/data
+volumes:
+  data-volume:
+    driver: local
+    driver_opts:
+      type: none
+      device: ./data
+      o: bind
