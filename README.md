@@ -2,10 +2,13 @@
 
 This is an application built with Pathway's LLM-App and Streamlit as the user interface. The purpose of this app is to facilitate question and answer tasks to enhance understanding of research papers from arxiv.com.
 
-<video controls poster="image.png" >
-  <source src="video.mp4" type="video.mp4">
-  Your browser does not support the video tag.
-</video> 
+
+## Video Demo of the APP
+<video src="https://github.com/rony0000013/arxiv-qa-llm-app/assets/103501472/0ae9ef1d-e1ff-45ef-8e4e-6b205f63517b" controls="controls" >
+</video>
+
+[ LINK for the Video ](https://youtu.be/BZjWr5ula0M)
+
 
 ## Description
 
