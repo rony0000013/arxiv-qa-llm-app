@@ -1,16 +1,16 @@
-# LLM App for Arxiv Q&A
+# LLM App for Arxiv Q&A 📚
 
 This is an application built with Pathway's LLM-App and Streamlit as the user interface. The purpose of this app is to facilitate question and answer tasks to enhance understanding of research papers from arxiv.com.
 
 
-## Video Demo of the APP
+## Video Demo of the APP 🎥
 <video src="https://github.com/rony0000013/arxiv-qa-llm-app/assets/103501472/0ae9ef1d-e1ff-45ef-8e4e-6b205f63517b" controls="controls" >
 </video>
 
 [ LINK for the Video ](https://youtu.be/BZjWr5ula0M)
 
 
-## Description
+## Description 📝
 
 The app is build with the modification of exixting LLM-APP examples and iterating on them
 
@@ -27,14 +27,14 @@ The app is deployed using Docker, making it easy to deploy and run on any platfo
 Overall, the LLM App for Arxiv Q&A provides researchers, students, and anyone interested in scientific literature with a powerful tool for exploring and understanding research papers from arxiv.com. It combines the advanced capabilities of the LLM App with a user-friendly interface, making it accessible and valuable for a wide range of users.
 
 
-## Features
+## Features 🎁
 
 - Question and answer functionality for arxiv.com research papers
 - User-friendly interface powered by Streamlit
 - Docker deployment for easy app deployment on any platform
 - Integration with Gemini API for LLM tasks
 
-## Summary of available endpoints
+## Summary of available endpoints 📊
 
 This example spawns a lightweight webserver that accepts queries on six possible endpoints, divided into two categories: document indexing and RAG with LLM.
 ### Default url for backend `http://0.0.0.0:8000/`
@@ -49,7 +49,7 @@ This example spawns a lightweight webserver that accepts queries on six possible
 - `/v1/pw_ai_summary` to summarize a list of texts;
 - `/v1/pw_ai_aggregate_responses` to make a summary of a question for different documents and answers;
 
-## Prerequisites
+## Prerequisites 📋
 
 Before running the app, make sure you have the following installed:
 
@@ -57,7 +57,7 @@ Before running the app, make sure you have the following installed:
 - Git
 - Docker
 
-## Installation
+## Installation 💻
 
 1. Clone the repository:
 
@@ -82,9 +82,9 @@ Before running the app, make sure you have the following installed:
   docker compose up
   ```
   
-  ### **Must wait for 18-20 mins to build the image**
+  ### **Must wait for 18-20 mins to build the image ⏳** 
 
-  ### **After the container is started must wait 3-5 mins for the server to be setup properly**
+  ### **After the container is started must wait 3-5 mins for the server to be setup properly ⏳**
 
 5. Access the app in your browser at `http://localhost:8501`.
 
@@ -96,7 +96,7 @@ Before running the app, make sure you have the following installed:
   ```
 
 
-## Future iprovements 
+## Future iprovements  🚀
   - add ability to directly search and fetch arxiv documents from the application
   - support for visual inputs for better Q&A
   - better summarization abilities
