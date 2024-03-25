@@ -3,7 +3,7 @@
 This is an application built with Pathway's LLM-App and Streamlit as the user interface. The purpose of this app is to facilitate question and answer tasks to enhance understanding of research papers from arxiv.com.
 
 <video controls poster="image.png" >
-  <source src="video.mp4" type="video/mp4">
+  <source src="video.mp4" type="video.mp4">
   Your browser does not support the video tag.
 </video> 
 
